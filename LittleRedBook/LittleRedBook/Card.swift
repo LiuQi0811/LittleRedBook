@@ -41,7 +41,7 @@ struct Card: View {
                 // 设置圆形头像
                     .mask(Circle())
                 // 设置大小
-                    .frame(width: 40)
+                    .frame(width: 40,height: 40)
                 // 用户名
                 Text(username)
                 Spacer()
