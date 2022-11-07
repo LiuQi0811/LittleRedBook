@@ -13,6 +13,10 @@
 		D2D187A32912617700D0DE6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D187A22912617700D0DE6A /* Preview Assets.xcassets */; };
 		D2D187AC291391F200D0DE6A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D187AB291391F200D0DE6A /* Card.swift */; };
 		D2D187AE2913B3E000D0DE6A /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D187AD2913B3E000D0DE6A /* Tabbar.swift */; };
+		D2D187B029160AA500D0DE6A /* DiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D187AF29160AA500D0DE6A /* DiscoveryView.swift */; };
+		D2D187B229160AE500D0DE6A /* NearbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D187B129160AE500D0DE6A /* NearbyView.swift */; };
+		D2D187B429160B1100D0DE6A /* FollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D187B329160B1100D0DE6A /* FollowView.swift */; };
+		D2D187B629161A4100D0DE6A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D187B529161A4100D0DE6A /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		D2D187A22912617700D0DE6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D2D187AB291391F200D0DE6A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		D2D187AD2913B3E000D0DE6A /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
+		D2D187AF29160AA500D0DE6A /* DiscoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryView.swift; sourceTree = "<group>"; };
+		D2D187B129160AE500D0DE6A /* NearbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyView.swift; sourceTree = "<group>"; };
+		D2D187B329160B1100D0DE6A /* FollowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowView.swift; sourceTree = "<group>"; };
+		D2D187B529161A4100D0DE6A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,10 @@
 				D2D187A12912617700D0DE6A /* Preview Content */,
 				D2D187AB291391F200D0DE6A /* Card.swift */,
 				D2D187AD2913B3E000D0DE6A /* Tabbar.swift */,
+				D2D187AF29160AA500D0DE6A /* DiscoveryView.swift */,
+				D2D187B129160AE500D0DE6A /* NearbyView.swift */,
+				D2D187B329160B1100D0DE6A /* FollowView.swift */,
+				D2D187B529161A4100D0DE6A /* Extension.swift */,
 			);
 			path = LittleRedBook;
 			sourceTree = "<group>";
@@ -144,9 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2D1879E2912617600D0DE6A /* ContentView.swift in Sources */,
+				D2D187B229160AE500D0DE6A /* NearbyView.swift in Sources */,
 				D2D187AC291391F200D0DE6A /* Card.swift in Sources */,
+				D2D187B429160B1100D0DE6A /* FollowView.swift in Sources */,
 				D2D1879C2912617600D0DE6A /* LittleRedBookApp.swift in Sources */,
 				D2D187AE2913B3E000D0DE6A /* Tabbar.swift in Sources */,
+				D2D187B029160AA500D0DE6A /* DiscoveryView.swift in Sources */,
+				D2D187B629161A4100D0DE6A /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

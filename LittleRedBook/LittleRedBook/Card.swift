@@ -34,14 +34,8 @@ struct Card: View {
             HStack(spacing: 0){ //设置间距
                 // 头像信息
                 Image(image)
-                // 设置图片可编辑
-                    .resizable()
-                // 设置图片填充方式
-                    .aspectRatio(contentMode: .fit)
-                // 设置圆形头像
-                    .mask(Circle())
-                // 设置大小
-                    .frame(width: 40,height: 40)
+                // 调取自定义图片扩展接口
+                    .CircleImage(dimensions: 40)
                 // 用户名
                 Text(username)
                 Spacer()

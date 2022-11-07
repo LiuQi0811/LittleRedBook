@@ -18,18 +18,18 @@ struct ContentView: View {
                 // 顶部内容
                 HStack{
                     
-                    // 导航栏右侧的搜索框按钮
+                    // 导航栏左侧的相机按钮
                     Button{
 
                     }label: {
-                        Image(systemName: "magnifyingglass")
+                        Image("home_tab_camera_yellow")
                     }
-                    // 隐藏按钮
-                    .opacity(0)
+                    // 设置黑色的前景色
+                    .foregroundColor(.black)
                     
                     Spacer()
                     
-                    HStack{
+                    HStack(spacing: 25){ //导航按钮设置 25 的间距
                         /**
                          导航栏三个按钮
                          */
@@ -84,62 +84,19 @@ struct ContentView: View {
                 // 主题内容
                 // 创建选项卡视图
                 TabView(selection: self.$select){
-                // 创建轴视图 ScrollView滚动视图
-                    ScrollView{
-                        // 设置留白
-                        Color.clear.frame(height: 0)
-                        // 设置 body内容
-                            // 创建水平堆栈视图
-                            HStack(alignment: .top){ // 对齐方式 顶部对齐
-                                /**
-                                 两栏布局
-                                 */
-                                
-                                // 调取卡片视图
-                                VStack{
-                                    Card(text: "哈哈哈😄",image: "壁纸1",username: "风吹屁屁凉",locate: "33km")
-                                    Card(text: "哈哈哈😄",image: "壁纸9",username: "风吹屁屁凉",locate: "33km")
-                                }
-                                
-                                VStack{
-                                    Card(text: "乡村小镇 好美啊😄",image: "壁纸2",username: "滑不溜秋",locate: "45km")
-                                }
-                                
-                            }
-                    }
-                    // 设置灰色的背景色 0.0.5透明度
-                    .background(.gray.opacity(0.05))
-                    .tag(0)
-                    
-                    
-                    // 创建轴视图 ScrollView滚动视图
-                        ScrollView{
-                            // 设置留白
-                            Color.clear.frame(height: 0)
-                            // 设置 body内容
-                                // 创建水平堆栈视图
-                                HStack(alignment: .top){ // 对齐方式 顶部对齐
-                                    /**
-                                     两栏布局
-                                     */
-                                    
-                                    // 调取卡片视图
-                                    VStack{
-                                        Card(text: "哈哈哈😄",image: "壁纸5",username: "风吹屁屁凉",locate: "33km")
-                                        Card(text: "哈哈哈😄",image: "壁纸4",username: "风吹屁屁凉",locate: "33km")
-                                    }
-                                    
-                                    VStack{
-                                        Card(text: "乡村小镇 好美啊😄",image: "壁纸7",username: "滑不溜秋",locate: "45km")
-                                    }
-                                    
-                                }
-                        }
-                    // 设置灰色的背景色 0.05透明度
-                        .background(.gray.opacity(0.05))
+            
+                    // 调取附近视图
+                    NearbyView()
+                        .tag(0)
+                    // 调取发现视图
+                    DiscoveryView()
                         .tag(1)
+                    // 调取关注视图
+                    FollowView()
+                        .tag(2)
+                  
                     
-                    }
+                }
                     // 添加选项卡视图分页样式
                     // page 属性的indexDisplayMode 设置.never 隐藏小圆点
                 .tabViewStyle(.page(indexDisplayMode: .never))
